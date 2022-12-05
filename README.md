@@ -1,5 +1,6 @@
 # E-commerce-Mobile-Shopping-Platform
-# [E-commerce Mobile Shopping Platform App Flow][App Flow]
+
+[E-commerce Mobile Shopping Platform App Flow][App Flow]
 
 The Internet has made fundamental changes to human lifestyle and also the way
 business is conducted. With the availability of the Internet, more and more people move
