@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lesorac">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Lesorac">
+        <activity
+            android:name="com.example.lesorac.activity.InboxActivity"
+            android:exported="true" />
+        <activity
+            android:name="com.example.lesorac.activity.ChatActivity"
+            android:exported="true" />
+        <activity android:name="com.example.lesorac.activity.ProductDetailActivity" />
+        <activity android:name="com.example.lesorac.activity.ShowAllActivity" />
+        <activity android:name="com.example.lesorac.activity.SellActivity" />
+        <activity android:name="com.example.lesorac.activity.ProfileActivity" />
+        <activity android:name="com.example.lesorac.activity.HomepageActivity" />
+        <activity android:name="com.example.lesorac.activity.SignupActivity" />
+        <activity android:name="com.example.lesorac.activity.LoginActivity" />
+        <activity android:name="com.example.lesorac.activity.OnboardingActivity" />
+        <activity
+            android:name="com.example.lesorac.MainActivity"
+            android:theme="@style/SplashTheme"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value=""/>
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <service
+            android:name="com.example.lesorac.adapter.MessagingService"
+            android:permission="com.google.android.c2dm.permission.SEND"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

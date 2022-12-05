@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">Lesorac</string>
+    <string name="facebook_app_id">327059378925801</string>
+    <string name="fb_login_protocol_scheme">fb327059378925801</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="select_user">Select User</string>
+    <string name="log_out">Log out</string>
+    <string name="leave_a_message">Leave a Message</string>
+    <string name="online">Online</string>
+
+    <string-array name="categories">
+        <item>Clothes</item>
+        <item>Food &amp; Beverage</item>
+        <item>Electronic</item>
+        <item>Pet</item>
+        <item>Kitchen &amp; Appliances</item>
+        <item>Other</item>
+    </string-array>
+
+
+    <string-array name="condition">
+        <item>New</item>
+        <item>Used</item>
+    </string-array>
+
+    <string name="title_activity_show_all">ShowAllActivity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>
